@@ -21,7 +21,7 @@ const defaultAccounts = {
 anchor.setProvider(provider);
 const program = anchor.workspace.TiktokClone as Program<TiktokClone>;
 let creatorKey = provider.wallet.publicKey;
-let stateSigner;
+let stateSigner; 
 
 const run =  async () => {
   [stateSigner] = await anchor.web3.PublicKey.findProgramAddress(
